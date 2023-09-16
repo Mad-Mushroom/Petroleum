@@ -51,6 +51,7 @@ hr {
 }
 
 .button, #logo, li, img, a, #cloudLogo, #loginButton, div { transition: all 300ms }
+.fa-bars { display: none; }
 
 header {
 	width: 100%;
@@ -58,8 +59,8 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #000000;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	background: #141419;
+	box-shadow: 0 1px 2px rgb(43, 43, 43);
 	z-index: 1;
 }
 
@@ -81,6 +82,7 @@ header {
 
 #logo img {
 	width: 100%;
+	margin-top: 15%;
 }
 
 #logo a p {
@@ -97,7 +99,7 @@ header nav {
 
 header nav ul li {
 	float: left;
-	margin-right: 25px;
+	margin-left: 25px;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -277,4 +279,201 @@ footer p {
 	margin-top: 40px;
 	font-size: 15px;
 	color: #ffffff;
+}
+
+/* MEDIA QUERRIES */
+
+/* Tablets */
+
+@media only screen and (max-width: 1600px) {
+	.fa-bars { display: none; }
+
+	header {
+		height: 50px;
+	}
+
+	#logo img {
+		width: 70%;
+		margin-top: 4%;	
+  	}
+
+	header nav {
+		margin: -5px 50px 0 0;
+	}
+
+	#cloudLogo {
+		margin-top: 160px;
+  		margin-left: 8%;
+  		float: left;
+  		width: 300px;
+  		height: 300px;
+	}
+
+	p {
+		width: 500px;
+	}
+
+	#home p {
+		margin: 2px auto 0px 45%;
+	}
+	#home h2 {
+		margin: 220px auto 20px 45%;
+	}
+	#home h1 {
+		margin: -50px auto -25px 45%;
+	}
+
+	#arrow {
+		width: 32px;
+  		margin-top: 10px;
+  		float: left;
+  		margin-left: 10%;
+	}
+
+	h3 {
+		font-size: 40px;
+	}
+
+	h4, #servers h4 {
+		font-size: 12px;
+	}
+
+	#plans ul li {
+		margin-left: 100px;
+	}
+
+	#plans div {
+		width: 200px;
+  		height: 350px;
+	}
+}
+
+/* Mobile */
+
+@media screen and (max-width: 910px){
+	#logo {
+		margin: 5px 0 0 10px;
+	}
+
+	#logo img {
+		width: 70%;
+		margin-right: 50%;
+	}
+
+	header nav {
+		margin: 0;
+		float: none;
+	}
+
+	.fa-bars {
+		font-size: 30px;
+		color: white;
+		display: inline-block;
+		width: 100%;
+		cursor: pointer;
+		float: right;
+		margin: -40px 2px 0 0;
+	}
+
+	.fa-bars:hover {
+		opacity: 0.5;
+	}
+
+	header nav ul {
+		height: 0;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	header nav ul.open {
+		height: auto;
+	}
+
+	header nav ul li {
+		width: 100%;
+		padding: 5px 0;
+		margin: 0;
+		font-size: 14px;
+		border-top: 1px solid #696969;
+		background-color: #000000;
+	}
+
+	header nav ul li a{
+		font-size: 14px;
+	}
+
+	#loginButton {
+		width: 100%;
+  		height: 30px;
+  		border-radius: 10px;
+  		background-color: #000000;
+  		border-color: #008cff;
+  		color: #008cff;
+	}
+
+	header nav ul li:hover {
+		transform: scale(1.0);
+	}
+
+	#cloudLogo {
+		margin-top: 20px;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+
+	p {
+		width: 300px;
+	}
+
+	#home h1 {
+		font-size: 50px;
+		margin: -34px auto -20px 10%;
+	}
+
+	#home h2 {
+		margin: 220px auto 10px 10%;
+	}
+
+	#home p {
+		margin: 2px auto 0px 10%;
+	}
+
+	#arrow {
+		margin-left: 45%;
+	}
+
+	#plans ul li {
+		margin-left: 70px;
+	}
+
+	#plans ul li {
+		width: 100%;
+		float: left;
+		margin-bottom: 15px;
+		margin-left: 25px;
+  	}
+
+  	#plans div {
+		width: 300px;
+		height: 350px;
+		border-radius: 5px;
+		border-width: 10px;
+		border-color: white;
+		background-color: #454545;
+		margin-left: 0;
+		margin-top: 0px;
+  	}
+
+	#link-list ul li {
+		width: 100%;
+		float: none;
+	}
+
+	#link-list {
+		margin-bottom: -70px;
+	}
 }
