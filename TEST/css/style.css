@@ -1,0 +1,479 @@
+html, body {
+	margin: 2;
+	padding: 0;
+	height: 100%;
+	text-align: center;
+	background: #141419;
+	scroll-behavior: smooth;
+}
+
+section {
+	min-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* HEADER */
+
+h1, h2, h3, a {
+	font-family: 'Poppins', sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #008cff;
+}
+
+h3 {
+	font-size: 60px;
+	padding-top: 8%;
+	margin-bottom: 5px;
+}
+
+h4, p {
+	font-family: 'Poppins', sans-serif;
+	color: #ffffff;
+}
+
+hr {
+	width: 30px;
+	height: 3px;
+	background: #ffffff;
+	border: 0;
+	margin: 0 auto 40px auto;
+}
+
+.button, #logo, li, img, a, #cloudLogo, #loginButton, div { transition: all 300ms }
+.fa-bars { display: none; }
+
+header {
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #141419;
+	box-shadow: 0 1px 2px rgb(43, 43, 43);
+	z-index: 1;
+}
+
+#logo {
+	width: 55px;
+	float: left;
+	margin: 5px 0 0 50px;
+}
+
+#logoText {
+	width: 55px;
+	float: left;
+	margin: -60px 0 0 -200px;
+}
+
+#logo:hover {
+	opacity: 0.8;
+}
+
+#logo img {
+	width: 100%;
+	margin-top: 15%;
+}
+
+#logo a p {
+	font-size: 35px;
+	font-family: 'Poppins', sans-serif;
+	float: left;
+	margin: 5px 0 0 25px;
+}
+
+header nav {
+	float: right;
+	margin: 10px 50px 0 0;
+}
+
+header nav ul li {
+	float: left;
+	margin-left: 25px;
+	font-family: 'Poppins', sans-serif;
+}
+
+header nav ul li button {
+	font-size: 15px;
+}
+
+header nav ul li a {
+	font-size: 20px;
+}
+
+header nav ul li:hover {
+	transform: scale(1.1);
+}
+
+#loginButton {
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	background-color: #000000;
+	border-color: #008cff;
+	color: #008cff;
+}
+
+#loginButton:hover {
+	background-color: #008cff;
+	color: white;
+}
+
+/* HOME */
+
+#home {
+	background: #141419;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: left;
+}
+
+#home h1 {
+	margin: -50px auto -25px 50%;
+	font-size: 80px;
+}
+
+#home h2 {
+	margin: 220px auto 20px 50%;
+	font-size: 25px;
+}
+
+#home p {
+	margin: 2px auto 0px 50%;
+}
+
+#arrow {
+	width: 32px;
+	margin-top: 150px;
+	float: left;
+	margin-left: 5%;
+	opacity: 0.7;
+}
+
+#cloudLogo {
+	margin-top: 130px;
+	margin-left: 22%;
+	float: left;
+	width: 400px;
+	height: 400px;
+}
+
+#arrow:hover {
+	opacity: 1;
+}
+
+#cloudLogo:hover {
+	transform: scale(1.1);
+	box-shadow: 0 5px 5 px rgba(0, 0, 0, 0.3);
+}
+
+/* SERVER PLANS */
+
+#servers {
+	background: #19191f;
+	background-position: center center;
+}
+
+#servers h4 {
+	font-size: 25px;
+}
+
+p {
+	width: 700px;
+	margin: 0 auto 0 auto;
+}
+
+#plans {
+	width: auto;
+	margin: 0 auto 0 auto;
+}
+
+#plans ul {
+	padding: 0;
+	float: left;
+}
+
+#plans ul li {
+	width: 16.66%;
+	float: left;
+	margin-bottom: 15px;
+	margin-left: 90px;
+}
+
+#plans div {
+	width: 400px;
+	height: 600px;
+	border-radius: 5px;
+	border-width: 10px;
+	border-color: white;
+	background-color: #454545;
+	margin-left: 20%;
+	margin-top: 60px;
+}
+
+#plans div button {
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	background-color: #000000;
+	border-color: #008cff;
+	color: #008cff;
+}
+
+#plans div button:hover {
+	background-color: #008cff;
+	color: white;
+}
+
+#plans div:hover {
+	transform: scale(1.02);
+	box-shadow: 0 5px 5 px rgba(0, 0, 0, 0.3);
+}
+
+#plans img {
+	width: 300px;
+	height: 600px;
+	border-radius: 5px;
+}
+
+#plans img:hover {
+	transform: scale(1.1);
+	box-shadow: 0 5px 5 px rgba(0, 0, 0, 0.3);
+}
+
+/* Support */
+
+#support {
+	background: #141419;
+}
+
+/* FOOTER */
+
+footer {
+	width: 100%;
+	height: 100px;
+	background-color: #19191f;
+}
+
+#link-list ul li {
+	width: 20%;
+	float: left;
+}
+
+#link-list ul li a {
+	font-size: 15px;
+}
+
+footer p {
+	margin-top: 40px;
+	font-size: 15px;
+	color: #ffffff;
+}
+
+/* MEDIA QUERRIES */
+
+/* Tablets */
+
+@media only screen and (max-width: 1600px) {
+	.fa-bars { display: none; }
+
+	header {
+		height: 50px;
+	}
+
+	#logo img {
+		width: 70%;
+		margin-top: 4%;	
+  	}
+
+	header nav {
+		margin: -5px 50px 0 0;
+	}
+
+	#cloudLogo {
+		margin-top: 160px;
+  		margin-left: 8%;
+  		float: left;
+  		width: 300px;
+  		height: 300px;
+	}
+
+	p {
+		width: 500px;
+	}
+
+	#home p {
+		margin: 2px auto 0px 45%;
+	}
+	#home h2 {
+		margin: 220px auto 20px 45%;
+	}
+	#home h1 {
+		margin: -50px auto -25px 45%;
+	}
+
+	#arrow {
+		width: 32px;
+  		margin-top: 10px;
+  		float: left;
+  		margin-left: 10%;
+	}
+
+	h3 {
+		font-size: 40px;
+	}
+
+	h4, #servers h4 {
+		font-size: 12px;
+	}
+
+	#plans ul li {
+		margin-left: 100px;
+	}
+
+	#plans div {
+		width: 200px;
+  		height: 350px;
+	}
+}
+
+/* Mobile */
+
+@media screen and (max-width: 910px){
+	#logo {
+		margin: 5px 0 0 10px;
+	}
+
+	#logo img {
+		width: 70%;
+		margin-right: 50%;
+	}
+
+	header nav {
+		margin: 0;
+		float: none;
+	}
+
+	.fa-bars {
+		font-size: 30px;
+		color: white;
+		display: inline-block;
+		width: 100%;
+		cursor: pointer;
+		float: right;
+		margin: -40px 2px 0 0;
+	}
+
+	.fa-bars:hover {
+		opacity: 0.5;
+	}
+
+	header nav ul {
+		height: 0;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	header nav ul.open {
+		height: auto;
+	}
+
+	header nav ul li {
+		width: 100%;
+		padding: 5px 0;
+		margin: 0;
+		font-size: 14px;
+		border-top: 1px solid #696969;
+		background-color: #000000;
+	}
+
+	header nav ul li a{
+		font-size: 14px;
+	}
+
+	#loginButton {
+		width: 100%;
+  		height: 30px;
+  		border-radius: 10px;
+  		background-color: #000000;
+  		border-color: #008cff;
+  		color: #008cff;
+	}
+
+	header nav ul li:hover {
+		transform: scale(1.0);
+	}
+
+	#cloudLogo {
+		margin-top: 20px;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+
+	p {
+		width: 300px;
+	}
+
+	#home h1 {
+		font-size: 50px;
+		margin: -34px auto -20px 10%;
+	}
+
+	#home h2 {
+		margin: 220px auto 10px 10%;
+	}
+
+	#home p {
+		margin: 2px auto 0px 10%;
+	}
+
+	#arrow {
+		margin-left: 45%;
+	}
+
+	#plans ul li {
+		margin-left: 70px;
+	}
+
+	#plans ul li {
+		width: 100%;
+		float: left;
+		margin-bottom: 15px;
+		margin-left: 25px;
+  	}
+
+  	#plans div {
+		width: 300px;
+		height: 350px;
+		border-radius: 5px;
+		border-width: 10px;
+		border-color: white;
+		background-color: #454545;
+		margin-left: 0;
+		margin-top: 0px;
+  	}
+
+	#link-list ul li {
+		width: 100%;
+		float: none;
+	}
+
+	#link-list {
+		margin-bottom: -70px;
+	}
+}
