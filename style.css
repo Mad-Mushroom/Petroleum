@@ -50,7 +50,7 @@ hr {
 	margin: 0 auto 40px auto;
 }
 
-.button, #logo, li, img, a, #cloudLogo, #loginButton { transition: all 300ms }
+.button, #logo, li, img, a, #cloudLogo, #loginButton, div { transition: all 300ms }
 
 header {
 	width: 100%;
@@ -199,12 +199,44 @@ p {
 
 #plans ul {
 	padding: 0;
+	float: left;
 }
 
 #plans ul li {
-	width: 33.3%;
+	width: 16.66%;
 	float: left;
 	margin-bottom: 15px;
+	margin-left: 145px;
+}
+
+#plans div {
+	width: 400px;
+	height: 600px;
+	border-radius: 5px;
+	border-width: 10px;
+	border-color: white;
+	background-color: #454545;
+	margin-left: 20%;
+	margin-top: 60px;
+}
+
+#plans div button {
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	background-color: #000000;
+	border-color: #008cff;
+	color: #008cff;
+}
+
+#plans div button:hover {
+	background-color: #008cff;
+	color: white;
+}
+
+#plans div:hover {
+	transform: scale(1.02);
+	box-shadow: 0 5px 5 px rgba(0, 0, 0, 0.3);
 }
 
 #plans img {
