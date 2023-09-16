@@ -138,12 +138,12 @@ header nav ul li:hover {
 }
 
 #home h1 {
-	margin: 2px auto -5px 50%;
+	margin: -50px auto -25px 50%;
 	font-size: 80px;
 }
 
 #home h2 {
-	margin: 220px auto 0px 50%;
+	margin: 220px auto 20px 50%;
 	font-size: 25px;
 }
 
@@ -160,9 +160,11 @@ header nav ul li:hover {
 }
 
 #cloudLogo {
-	margin-top: 220px;
-	margin-left: 15%;
+	margin-top: 130px;
+	margin-left: 22%;
 	float: left;
+	width: 400px;
+	height: 400px;
 }
 
 #arrow:hover {
