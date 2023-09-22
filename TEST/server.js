@@ -77,6 +77,16 @@ app.post('/login-user', (req, res) => {
     })
 })
 
+app.post('/delete-user', (req, res) => {
+    const { email } = req.body;
+
+    db("users")
+    .where("id", 4)
+    .del()
+
+    res.json("maybe?");
+})
+
 app.listen(3000, (req, res) => {
     console.log('listening on port 3000......')
 })
