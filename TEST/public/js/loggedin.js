@@ -35,7 +35,12 @@ if(delAcc != null){
             headers: new Headers({'Content-Type': 'application/json'}),
             body: JSON.stringify({
                 email: sessionStorage.email,
+                password: sessionStorage.email
             })
+        })
+        .then(res => res.json())
+        .then(data => {
+            alert(data);
         })
     }
 }

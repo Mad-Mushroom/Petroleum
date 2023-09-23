@@ -78,13 +78,17 @@ app.post('/login-user', (req, res) => {
 })
 
 app.post('/delete-user', (req, res) => {
-    const { email } = req.body;
+    const { email, password } = req.body;
 
-    db("users")
-    .where("id", 4)
+    db.select('name', 'email')
+    .from('users')
+    .where({
+        email: email,
+        password: password
+    })
     .del()
 
-    res.json("maybe?");
+    res.json("never gonna give you up");
 })
 
 app.listen(3000, (req, res) => {

@@ -9,6 +9,7 @@ const validateData = (data) => {
     } else{
         sessionStorage.name = data.name;
         sessionStorage.email = data.email;
+        sessionStorage.password = data.password;
         location.href = '/';
     }
 }
