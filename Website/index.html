@@ -20,8 +20,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Raleway:wght@400;600;700;800;900&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Raleway:wght@400;600;700;800;900&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<header>
@@ -40,21 +40,31 @@
 					<li><a href="#servers">Game Servers</a></li>
 					<li><a href="#support">Support</a></li>
 					<li><a href="https://discord.gg/xrDAA3zecn"  target="_blank">Discord</a></li>
-					<li><button id="loginButton">Login</button></li>
+					<!--<li class="profile"><a href="/login"><button id="loginButton">Login</button></a></li>-->
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">Login</button>
+						<div id="myDropdown" class="dropdown-content">
+						  <a href="https://panel.petroleumhost.com/">Panel</a>
+						  <a href="#">Billing</a>
+						</div>
+					</div> 
 				</ul>
 			</nav>
 		</header>
 
 		<section id="home">
-			<hr>
-			<img id="cloudLogo" src="img/cloudserver.png">
-			<h2>keep it cheap with</h2>
-			<h1>Petroleum</h1>
-			<h1>hosting</h1>
-			<p>Here at Petroleum, we offer cheap game hosting for the best specs possible. Our servers utilizes the Intel® Core™ i9-9900k cpu and NVMe SSD storage type. Create your game server with us for the best performance possible.</p>
-			<a href="#servers">
-				<img id="arrow" src="img/stock/arrow.png" alt="Arrow Down">
-			</a>
+			<div id="particles">
+				<div id="webcoderskull">
+					<img id="cloudLogo" src="img/cloudserver.png">
+					<h2>keep it cheap with</h2>
+					<h1>Petroleum</h1>
+					<h1>hosting</h1>
+					<p>Here at Petroleum, we offer cheap game hosting for the best specs possible. Our servers utilizes the Intel® Core™ i9-9900k cpu and NVMe SSD storage type. Create your game server with us for the best performance possible.</p>
+					<a href="#servers">
+						<img id="arrow" src="img/stock/arrow.png" alt="Arrow Down">
+					</a>
+				</div>
+			</div>
 		</section>
 
 		<section id="servers">
@@ -125,13 +135,26 @@
 					</div></li>
 				</ul>
 			</div>
-			<h4 style="color: #000000;">69</h4>
+			<h4 style="color: #19191f;">You found a secret!!! :))))))</h4>
 		</section>
 
 		<section id="support">
-			<h3>Support</h3>
+			<h3>Q&A</h3>
 			<hr>
-			<p>Q&A or contact or idk, say what you want :)))</p>
+			<ul>
+				<li>
+					<h4>What cpu does Petroleum Host use?</h4>
+					<p>Our servers run on the AMD Ryzen™ Threadripper™ PRO 5955WX.</p>
+				</li>
+				<li>
+					<h4>How long does setup take?</h4>
+					<p>As soon as we recevie payment your server will be installed and you will be mailed your details.</p>
+				</li>
+				<li>
+					<h4>How much storage do I get?</h4>
+					<p>You get 10 x the amount of ram your buy.</p>
+				</li>
+			</ul>
 		</section>
 
 		<footer>
@@ -152,5 +175,7 @@
 
 		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 		<script src="js/mobile-menu.js"></script>
+		<script src="js/loggedin.js"></script>
+		<script src="js/particles.js"></script>
 	</body>
 </html>

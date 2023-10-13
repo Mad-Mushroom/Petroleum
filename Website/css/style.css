@@ -129,6 +129,53 @@ header nav ul li:hover {
 	color: white;
 }
 
+ /* Dropdown Button */
+ .dropbtn {
+	background-color: #008cff;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+	background-color: #008cff;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+	position: relative;
+	display: inline-block;
+	margin-left: 15px;
+  	margin-top: -8px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: black;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #008cff;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;} 
+
 /* HOME */
 
 #home {
@@ -145,7 +192,7 @@ header nav ul li:hover {
 }
 
 #home h2 {
-	margin: 220px auto 20px 50%;
+	margin: -101px auto 20px 50%;
 	font-size: 25px;
 }
 
@@ -162,7 +209,7 @@ header nav ul li:hover {
 }
 
 #cloudLogo {
-	margin-top: 130px;
+	margin-top: -169px;
 	margin-left: 22%;
 	float: left;
 	width: 400px;
@@ -176,6 +223,20 @@ header nav ul li:hover {
 #cloudLogo:hover {
 	transform: scale(1.1);
 	box-shadow: 0 5px 5 px rgba(0, 0, 0, 0.3);
+}
+
+#webcoderskull{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding: 0 20px;
+    width: 100%;
+    text-align: left;
+}
+
+canvas{
+    height:100vh;
+    background-color:#000000;
 }
 
 /* SERVER PLANS */
@@ -218,7 +279,7 @@ p {
 	border-width: 10px;
 	border-color: white;
 	background-color: #454545;
-	margin-left: 20%;
+	margin-left: 0;
 	margin-top: 60px;
 }
 
@@ -302,7 +363,7 @@ footer p {
 	}
 
 	#cloudLogo {
-		margin-top: 160px;
+		margin-top: -169px;
   		margin-left: 8%;
   		float: left;
   		width: 300px;
@@ -317,7 +378,7 @@ footer p {
 		margin: 2px auto 0px 45%;
 	}
 	#home h2 {
-		margin: 220px auto 20px 45%;
+		margin: -101px auto 20px 50%;
 	}
 	#home h1 {
 		margin: -50px auto -25px 45%;
