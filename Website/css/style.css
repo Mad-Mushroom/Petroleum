@@ -134,9 +134,15 @@ header nav ul li:hover {
 	background-color: #008cff;
 	color: white;
 	padding: 16px;
-	font-size: 16px;
+	font-size: 12px;
 	border: none;
 	cursor: pointer;
+	border-radius: 20px;
+	font-family: 'Poppins', sans-serif;
+	height: 40px;
+	line-height: 0px;
+	width: 111px;
+	margin-top: 5px;
   }
   
   /* Dropdown button on hover & focus */
