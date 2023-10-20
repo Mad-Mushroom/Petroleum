@@ -128,7 +128,7 @@ header nav ul li:hover {
 	border-radius: 10px;
 	background-color: #000000;
 	border-color: #008cff;
-	color: #008cff;
+	color: #008cff; 
 }
 
 #loginButton:hover {
@@ -149,10 +149,11 @@ header nav ul li:hover {
 	height: 35px;
 	line-height: 0px;
 	width: 111px;
-	margin-top: 8px;
+	margin-top: 6px;
 	font-weight: bold;
     vertical-align: middle;
 	text-align: center;
+	padding-top: 12px;
   }
   
   /* Dropdown button on hover & focus */
@@ -282,10 +283,10 @@ p {
 }
 
 #plans ul li {
-	width: 16.66%;
+	width: 20%;
 	float: left;
 	margin-bottom: 15px;
-	margin-left: 90px;
+	margin-left: 100px;
 }
 
 #plans div {
@@ -295,12 +296,12 @@ p {
 	border-width: 10px;
 	border-color: white;
 	background-color: #454545;
-	margin-left: 0;
+	margin-left: 100px;
 	margin-top: 60px;
 }
 
 #plans div button {
-	width: 100px;
+	width: 120px;
 	height: 30px;
 	border-radius: 10px;
 	background-color: #000000;
@@ -367,12 +368,12 @@ flex-direction: column;
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .faq-page:hover {
-    background-color: #090909;
+    background-color: #141419;
 }
 /* Style the faq-page panel. Note: hidden by default */
 .faq-body {
     padding: 0 18px;
-    background-color: #141419;;
+    background-color: #141419;
     display: none;
     overflow: hidden;
 }
