@@ -254,6 +254,8 @@ header nav ul li:hover {
 canvas{
     height:100vh;
     background-color:#000000;
+	width: 101%;
+  	margin-left: -1%;
 }
 
 /* SERVER PLANS */
